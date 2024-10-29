@@ -14,7 +14,9 @@ else:
     print(f"{num} is a prime number")
 
 
-
+'''output:
+Enter number: 98
+98 is not a prime number'''
 
 
 '''in the if block, we use assignment operator '=' to assign the value 1 to flag.so flag holds value 1.
