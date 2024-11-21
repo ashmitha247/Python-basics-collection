@@ -1,0 +1,4 @@
+A = 4	B = 5	Addition 9A = 4	B = 5	Addition 9A = 5	B = 6	Addition = 11
+459
+A = 4	B = 5	Addition = 9
+First Number = 4	Second Number = 4	Addition = 8
