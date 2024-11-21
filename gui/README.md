@@ -1,13 +1,4 @@
 
-Navigating the README.md File
-
-Welcome to the README.md file! This document provides an overview of Tkinter, a powerful library in Python for creating graphical user interfaces (GUIs). 
-The outline symbol at the rightmost corner is typically used to expand or collapse sections within the code editor.
-To navigate efficiently, Click on the outline symbol.
-
-
-
-
 GUI Programming in Python with Tkinter: Table of contents
 --------------------------------------
 
