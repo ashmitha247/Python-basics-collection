@@ -1,13 +1,85 @@
-from tkinter import *
+'''
 
-# Initialize an empty string to hold the expression
+
+1. Import the Tkinter library to access GUI components.
+2. Initialize a global variable exp to hold the current mathematical expression as a string.
+
+3. Function Definitions:
+
+a)press(n):
+    Handles button presses for numbers and operators.
+    Appends the pressed value to exp and updates the display.
+b)equalpress():
+    Evaluates the expression when the '=' button is pressed.
+    Uses eval() to compute the result and updates the display.
+    Handles errors if the evaluation fails.
+c)clear():
+    Resets the current expression and clears the display.
+    Creating the Main Window
+
+5. Set up the main GUI window with properties such as background color, title, and size.
+6. Setting Up the Display
+
+7. Create an entry widget to show the current expression, linked to the StringVar called equation.
+8. Creating Number Buttons
+
+9. Dynamically create buttons for numbers 1-9 using a loop.
+10. Each button is linked to the press function.
+11. Creating the '0' Button
+
+Create a button for '0' and place it in the grid.
+Creating Operation Buttons
+
+Create buttons for basic operations: addition, subtraction, multiplication, and division.
+Each button is linked to the press function.
+Creating Special Buttons
+
+Create buttons for the '=' operator (to evaluate the expression) and 'Clear' (to reset the expression).
+Link these buttons to their respective functions (equalpress and clear).
+Creating a Decimal Point Button
+
+Create a button for the decimal point and link it to the press function.
+Starting the GUI Event Loop
+
+Call gui.mainloop() to start the Tkinter event loop, allowing the application to run and respond to user input.
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+from tkinter import *  #This line imports ALL classes and functions from the tkinter module
+
+#We initialize a global variable exp to hold the current mathematical expression as a string.
 exp = ""
 
+
+'''Overview: The press function handles the logic for when a number or operator button is pressed. 
+It appends the button's value to the current expression and updates the display.
+
+Why Convert to String?: The button's value (e.g., a number or operator) is received as an argument n, which may not always be a string.
+To concatenate it with exp, which is a string, we convert n to a string using str(n). 
+This ensures that we can safely append the new value to the existing expression without type errors. '''
+
 # Function to handle button presses
-def press(n):
+def press(n): #The press function takes a parameter n, which represents the value of the button pressed.
     global exp
     exp = exp + str(n)  # Append the pressed button's value to the expression
     equation.set(exp)   # Update the display with the current expression
+
+
+    ''' equation.set(exp):
+    The set(value) method of StringVar is used to update the value of the variable. 
+    When you call equation.set(value), it changes the value stored in the StringVar to whatever is passed as the argument (value).'''
 
 # Function to evaluate the expression when '=' is pressed
 def equalpress():
