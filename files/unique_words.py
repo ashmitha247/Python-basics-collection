@@ -2,11 +2,11 @@
 
 def uniquewords_in_file(file):
     try:
-        i_f = open(file,'r')
-        splitted_file = i_f.read().split()
-        splitted_words = sorted(set(splitted_file))
-        for i in splitted_words:
-            print(f"{i} {splitted_words.count(i)}")
+        with open(file,'r') as file:
+            splitted_file = file.read().split()
+            splitted_words = sorted(set(splitted_file))
+            for i in splitted_words:
+                print(f"{i}")
     except:
         print("Error found")
 file_name = input("Enter file name: ")
