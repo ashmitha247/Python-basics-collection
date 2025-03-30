@@ -1,3 +1,5 @@
+#"Does the input string consist entirely of leading vowels (and spaces)?" if yes,string accepted.
+#not accepted if not.
 str = input("Enter string: ")
 #change the string into lowercase
 str = str.lower()

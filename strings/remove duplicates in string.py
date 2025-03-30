@@ -1,9 +1,9 @@
 input_string = input("Enter a string: ")
 result = ""
 
-for char in input_string:
-    if char not in result:
-        result += char
+for every_char in input_string:
+    if every_char not in result:
+        result += every_char
 
 print(result)  
 

@@ -1,10 +1,5 @@
 # Get custom names input from the user
-'''names_input = input("Enter names separated by commas: ")
-
-# Split the input string into a list of names and strip any extra whitespace
-names_list = [name.strip() for name in names_input.split(',')]'''
-
-names_list = list(map(str,input("Enter names: ").split()))
+names_list = input("Enter names: ").split()  # No need for map here
 
 # Define a set of vowels
 vowels = {'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'}

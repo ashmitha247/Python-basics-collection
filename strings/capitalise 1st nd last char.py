@@ -1,8 +1,10 @@
+#capitalise first and last char in every word of the sentence
+
 given_string = input("Enter string: ")
 
-'''The Python title() function is used to change the initial character in each word 
+'''The Python title() function is used to change the initial character IN EACH WORD 
 to Uppercase and the subsequent characters to Lowercase and then returns a new string.
-next, we have to convert last letter of each word to capital'''
+next, we have to convert last letter of EACH WORD to capital'''
 
 given_string = given_string.title() #imp; on both sides its given_string and the wont work unless its that
 #separating each word in S

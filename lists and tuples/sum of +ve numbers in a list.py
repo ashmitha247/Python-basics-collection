@@ -6,7 +6,7 @@ sum_of_positive_numbers = 0
 
 # Iterate through the list
 for item in numbers:
-    if number > 0:  # Check if the number is positive
+    if item> 0:  # Check if the number is positive
         sum_of_positive_numbers += item  # Add to the sum
 
 # Print the result

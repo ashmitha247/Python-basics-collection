@@ -111,7 +111,7 @@ exp_field = Entry(gui, textvariable=equation)  # Create an entry widget for disp
 exp_field.grid(columnspan=4, ipadx=70)         # Place it in the grid
 
 # Create number buttons
-for i in range(1, 10):
+for i in range(1, 10):             
     Button(gui, text=str(i), fg='black', bg='red', command=lambda x=i: press(x), height=1, width=7).grid(row=(i-1)//3 + 2, column=(i-1)%3)
 
 b0 = Button(gui, text='0', fg='black', bg='red', command=lambda: press('0'), height=1, width=7)

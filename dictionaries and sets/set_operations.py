@@ -12,3 +12,12 @@ print(f"Difference Set (Set 1 - Set 2): {sorted(a.difference(b))}")
 print(f"Symmetric difference set: {sorted(a.symmetric_difference(b))}")
 
 
+'''
+The symmetric difference of two sets is defined as the set of elements that are in either of the sets but not in their intersection.
+In other words, it includes elements that are unique to each set.
+example:
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+a.symmetric_difference(b)  # This would yield {1, 2, 4, 5} '''

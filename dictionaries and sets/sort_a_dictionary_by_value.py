@@ -14,4 +14,18 @@ for key,value in sorted_dict.items():
     print(f"{key}:{value}")
 
 '''When you call d.items(), where d is a dictionary,
-it returns a view of the dictionary's items (key-value pairs) as tuples. Each tuple contains a key and its corresponding value.'''
+it returns a view of the dictionary's items (key-value pairs) as tuples. Each tuple contains a key and its corresponding values.
+
+1. sorted(d.items(),key=lambda item:item[1]):
+
+d.items(): This converts the dictionary d into a list of key-value pairs (tuples).
+sorted(...): This function sorts the list of key-value pairs.
+key=lambda item:item[1]: This specifies the sorting criteria.
+It uses a lambda function to extract the second element (the value) of each key-value pair (item) for sorting.
+
+
+2. {k:v for k,v in ...}:
+
+This is a dictionary comprehension. It iterates over the sorted list of key-value pairs.
+
+In this case, lambda item: item[1] means that for each item in the list, the function will return the value at index 1. '''

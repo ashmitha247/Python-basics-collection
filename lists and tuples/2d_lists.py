@@ -42,9 +42,7 @@ for i in range(rows):
         two_dimensional_list[i][j] = value
 
 # Optional: Print the filled two-dimensional list
-print("The two-dimensional list is:")
-for row in two_dimensional_list:
-    print(row)
+print(two_dimensional_list)
 
 '''
 
